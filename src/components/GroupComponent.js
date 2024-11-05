@@ -1,6 +1,5 @@
 import { useMemo } from "react";
 import PropTypes from "prop-types";
-import "./GroupComponent.css";
 
 const GroupComponent = ({
   className = "",
@@ -69,39 +68,55 @@ const GroupComponent = ({
   }, [halfDayStatusAlignSelf]);
 
   return (
-    <div className={`rectangle-parent23 ${className}`} style={groupDivStyle}>
-      <div className="frame-child49" />
-      <div className="frame-parent15" style={groupDiv1Style}>
-        <div className="frame-parent16">
+    <div
+      className={`flex-[0.78] rounded-mini bg-white flex flex-row items-start justify-start pt-[31px] pb-[30px] pl-[35px] pr-5 box-border min-w-[195px] max-w-[250px] text-left text-mid text-lightsteelblue font-lexend mq450:flex-1 ${className}`}
+      style={groupDivStyle}
+    >
+      <div className="h-[134px] w-[250px] relative rounded-mini bg-white hidden" />
+      <div
+        className="flex-1 flex flex-row items-end justify-start gap-[18.5px] z-[1]"
+        style={groupDiv1Style}
+      >
+        <div className="flex flex-row items-start justify-start py-[23px] pl-[9px] pr-1.5 relative">
           <img
-            className="frame-child50"
+            className="h-full w-full absolute !m-[0] top-[0px] right-[0px] bottom-[0px] left-[0px] max-w-full overflow-hidden max-h-full"
             loading="lazy"
             alt=""
             src="/group-427318832.svg"
           />
-          <div className="empty-leave-elements-container">
+          <div className="relative font-light z-[1]">
             <span>04</span>
-            <span className="span8">/</span>
-            <span className="span9">07</span>
+            <span className="text-darkslateblue-100">/</span>
+            <span className="text-mediumslateblue">07</span>
           </div>
         </div>
-        <div className="frame-wrapper15">
-          <div className="half-day-leave-parent" style={frameDiv1Style}>
-            <div className="half-day-leave" style={halfDayLeaveStyle}>
+        <div className="flex-1 flex flex-col items-start justify-end pt-0 px-0 pb-[3px] text-base text-darkslateblue-100">
+          <div
+            className="self-stretch flex flex-col items-start justify-start gap-[7px]"
+            style={frameDiv1Style}
+          >
+            <div
+              className="relative font-light inline-block min-w-[112px]"
+              style={halfDayLeaveStyle}
+            >
               {halfDayLeave}
             </div>
-            <div className="frame-parent17">
-              <div className="ellipse-group">
-                <div className="frame-child51" />
-                <div className="frame-child52" />
-                <div className="templates" />
+            <div className="flex flex-row items-start justify-start gap-1 text-xs text-darkslateblue-300">
+              <div className="h-[43px] w-[9px] relative">
+                <div className="absolute top-[0px] left-[1px] rounded-[50%] bg-lightsteelblue w-2 h-2" />
+                <div className="absolute top-[18px] left-[0px] rounded-[50%] bg-mediumslateblue w-2 h-2" />
+                <div className="absolute top-[35px] left-[0px] rounded-[50%] bg-darkslateblue-100 w-2 h-2" />
               </div>
-              <div className="frame-parent18">
-                <div className="remaining-3-container">
-                  <div className="remaining-34">Remaining - 3</div>
+              <div className="flex flex-col items-start justify-start gap-[9.5px]">
+                <div className="flex flex-row items-start justify-start py-0 pl-px pr-0 text-2xs">
+                  <div className="relative font-light">Remaining - 3</div>
                 </div>
-                <div className="used-44">Used - 4</div>
-                <div className="used-44">Total - 7</div>
+                <div className="h-2 relative font-light inline-block shrink-0">
+                  Used - 4
+                </div>
+                <div className="h-2 relative font-light inline-block shrink-0">
+                  Total - 7
+                </div>
               </div>
             </div>
           </div>
