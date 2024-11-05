@@ -1,0 +1,112 @@
+.input-fields-child {
+  width: 297px;
+  height: 318px;
+  position: relative;
+  border-radius: var(--br-mini);
+  background-color: var(--color-white);
+  display: none;
+  z-index: 0;
+}
+.email1 {
+  text-decoration: none;
+  position: absolute;
+  margin: 0 !important;
+  top: 26px;
+  right: -791px;
+  font-size: var(--font-size-base);
+  font-family: var(--font-lexend);
+  color: var(--color-darkslateblue-100);
+  text-align: left;
+  display: inline-block;
+  min-width: 44px;
+}
+.value-field-container {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-mini);
+}
+.sign-in-button-child {
+  height: 35px;
+  width: 249px;
+  position: relative;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-mediumslateblue);
+  display: none;
+}
+.sign-in {
+  text-decoration: none;
+  position: relative;
+  font-size: var(--font-size-base);
+  font-family: var(--font-lexend);
+  color: var(--color-white);
+  text-align: left;
+  cursor: pointer;
+  z-index: 2;
+}
+.sign-in-button {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-6xs) var(--padding-76xl) var(--padding-5xs)
+    var(--padding-78xl);
+  background-color: var(--color-mediumslateblue);
+  align-self: stretch;
+  border-radius: var(--br-3xs);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  z-index: 1;
+}
+.sign-in-button:hover {
+  background-color: var(--color-royalblue);
+}
+.forgot-password {
+  position: relative;
+  font-size: var(--font-size-base);
+  text-decoration: underline;
+  font-family: var(--font-lexend);
+  color: var(--color-darkslateblue-100);
+  text-align: left;
+  z-index: 1;
+}
+.actions,
+.forgot-password-button,
+.input-fields2 {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.forgot-password-button {
+  flex-direction: row;
+  padding: 0 var(--padding-31xl) 0 var(--padding-40xl);
+}
+.actions,
+.input-fields2 {
+  flex-direction: column;
+  gap: var(--gap-xl);
+}
+.input-fields2 {
+  margin: 0;
+  flex: 1;
+  border-radius: var(--br-mini);
+  background-color: var(--color-white);
+  padding: var(--padding-7xl) var(--padding-5xl) var(--padding-13xl);
+  position: relative;
+  gap: var(--gap-23xl);
+  z-index: 1;
+}
+@media screen and (max-width: 450px) {
+  .sign-in-button {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .input-fields2 {
+    gap: var(--gap-2xl);
+  }
+}

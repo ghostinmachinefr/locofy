@@ -1,0 +1,56 @@
+.email {
+  text-decoration: none;
+  position: relative;
+  color: inherit;
+  display: inline-block;
+  min-width: 45px;
+  z-index: 1;
+}
+.value-wrapper-child {
+  height: 35px;
+  width: 249px;
+  position: relative;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-white);
+  border: 2px solid var(--color-gainsboro-100);
+  box-sizing: border-box;
+  display: none;
+}
+.value {
+  width: 45px;
+  border: 0;
+  outline: 0;
+  font-family: var(--font-lexend);
+  font-size: var(--font-size-base);
+  background-color: transparent;
+  position: relative;
+  color: var(--color-darkgray);
+  text-align: left;
+  display: inline-block;
+  padding: 0;
+  z-index: 2;
+}
+.input-labels,
+.value-wrapper {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.value-wrapper {
+  border-radius: var(--br-3xs);
+  background-color: var(--color-white);
+  border: 2px solid var(--color-gainsboro-100);
+  flex-direction: row;
+  padding: var(--padding-9xs) var(--padding-base) var(--padding-8xs);
+  z-index: 1;
+}
+.input-labels {
+  flex-direction: column;
+  gap: var(--gap-4xs);
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-darkslateblue-100);
+  font-family: var(--font-lexend);
+}
